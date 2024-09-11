@@ -1,0 +1,9 @@
+version: 0.0
+Resources:
+  - lambdaDeploy:
+      Type: AWS::Lambda::Function
+      Properties:
+        Name: "pyzipapp"
+        Alias: "LIVE"
+        CurrentVersion: "2"
+        TargetVersion: "3"
